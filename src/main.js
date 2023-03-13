@@ -5,7 +5,7 @@ function supportLanguages() {
 }
 
 function translate(query, completion) {
-  const queryTxt = query.text.replace("，", "，\r\n").replace("。", "。\r\n").replace(",", ",\r\n").replace(".", ".\r\n").trim();
+  const queryTxt = query.text.replace(" ", "").replace("，", "，\r\n").replace("。", "。\r\n").replace(",", ",\r\n").replace(".", ".\r\n").trim();
   let whatPrompt = `这个 "${queryTxt}" 可能是什么，请按照json格式回答，key值有Maybe和Desc，Maybe回答他最可能是的东西（要求精确些），Desc回答这个东西的描述;\n` + 
                    `答案应该使用中文。`;
   if ($option.back_language === "en") {
@@ -55,7 +55,7 @@ function translate(query, completion) {
         toParagraphs: [backData.Desc],
         toDict: {
           additions: [
-            { name: "What", value: query.text.trim() },
+            { name: "What", value: queryTxt },
             { name: "Maybe", value: backData.Maybe }
           ],
         },

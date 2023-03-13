@@ -33,7 +33,7 @@ jobs:
       - name: Commit files
         run: |
           git config --global user.name 'Ukenn2112'
-          git config --global user.email 'admin@ukenn.com'
+          git config --global user.email 'duola2002@gmail.com'
           git add appcast.json
           git commit -am 'update appcast.json'
 
