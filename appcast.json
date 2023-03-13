@@ -2,6 +2,13 @@
   "identifier": "com.ukenn.iwhat.opanai",
   "versions": [
     {
+      "version": "0.1.2",
+      "desc": "去除Bob自动填入的空格",
+      "sha256": "0f8c9aca799b4199e920e54881559a0a1c8d09373c4fd40af76e4d33c3a431ba",
+      "url": "https://github.com/Ukenn2112/iWhatBobPlugin/releases/download/v0.1.2/iwhat.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
       "version": "0.1.1",
       "desc": "第一次提交",
       "sha256": "f7212dcf8e4b9b8c9860fd88f621d08db1afa4366a0128bbc05774ddce213001",
