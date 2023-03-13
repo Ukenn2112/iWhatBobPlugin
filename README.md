@@ -2,7 +2,7 @@
 
 ## 功能展示
 
-<img src="" align="center" width="800">
+<img width="436" alt="image" src="https://user-images.githubusercontent.com/60847880/224736521-129463fb-1314-4f8b-9d59-4b75ad205203.png">
 
 ## 使用方法
 
