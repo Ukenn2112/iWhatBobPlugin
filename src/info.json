@@ -1,0 +1,43 @@
+{
+    "identifier": "com.ukenn.iwhat.opanai",
+    "version": "0.1.0",
+    "category": "translate",
+    "name": "iWhat 这是什么",
+    "summary": "识别任何东西的最简单方法",
+    "icon": "",
+    "author": "Ukenn",
+    "homepage": "https://github.com/Ukenn2112/iWhatBobPlugin",
+    "appcast": "https://raw.githubusercontent.com/Ukenn2112/iWhatBobPlugin/master/appcast.json",
+    "minBobVersion": "0.5.0",
+    "options": [
+        {
+            "identifier": "api_url",
+            "type": "text",
+            "title": "API URL",
+            "defaultValue": "https://api.openai.com",
+            "desc": "如果您的网络环境需要代理才能访问 OpenAI API, 可在这里修改为反代 API 的地址 默认为 https://api.openai.com"
+        },
+        {
+            "identifier": "api_key",
+            "type": "text",
+            "title": "API KEY",
+            "desc": "您的 OpenAI API KEY, 请在 https://platform.openai.com/account/api-keys 申请"
+        },
+        {
+            "identifier": "back_language",
+            "type": "menu",
+            "title": "反馈语言",
+            "defaultValue": "zh",
+            "menuValues": [
+                {
+                    "title": "中文",
+                    "value": "zh"
+                },
+                {
+                    "title": "English",
+                    "value": "en"
+                }
+            ]
+        }
+    ]
+}
